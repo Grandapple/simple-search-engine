@@ -7,7 +7,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         final var scanner = new Scanner(System.in);
         var terminate = false;
-
         while (!terminate) {
             System.out.println();
             System.out.println("=== Menu ===");
@@ -17,7 +16,7 @@ public class Main {
             System.out.print("> ");
             var option = scanner.nextInt();
             scanner.nextLine();
-            var dataProvider = new DataProvider("/home/daulet/Downloads/text.txt");
+            var dataProvider = new DataProvider(args[0]);
 
             switch (option) {
                 case 1:
